@@ -8,10 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'praveen store';
 
-  loadedFeature = 'recipe';
-onNavigate(feature:string){
-this.loadedFeature = feature;
-}
+  
 
 
 
