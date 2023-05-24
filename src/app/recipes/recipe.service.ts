@@ -39,6 +39,12 @@ new Ingredient('curry leaves',4)
           ];
 constructor(private slService: ShoppingListService){}
 
+
+setRecipes(recipes : Recipes[]){
+this.recipes = recipes;
+this.recipesChanged.next(this.recipes.slice());
+}
+
           getRecipes(){
             return this.recipes.slice();
           }
